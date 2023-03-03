@@ -1,0 +1,11 @@
+{{! const handleCreatListRespons = params => {
+const countryListRespons = params.map(({ name, flags }) => {
+return `<ul style="list-style:none">
+    <li class="country-info__capital-flag" style="display:flex; gap:5px; ">
+        <img class="country-list__flag" src="${flags.svg}" alt="Flag of ${name.official}" width=80px>
+        <h3 class="country-info__name">${name.official}</h3>
+    </li>
+</ul>`
+}).join('')
+return countryListRespons;
+} }}

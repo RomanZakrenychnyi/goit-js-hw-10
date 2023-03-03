@@ -1,0 +1,25 @@
+<h2 class="country-info__name">{{this.name.official}}</h2>
+<ul>
+    <li class="country-info__flag"><a href={{this.flags.svg}} src="flag of chosen country"></a></li>
+    <li class="country-info__capital">{{this.capital}}</li>
+    <li class="country-info__population">{{this.population}}</li>
+    <li class="country-info__lang">{{this.languages}}</li>
+</ul>
+
+
+
+{{!-- const handleCreatMarkup = dates => {
+const countryInfoMarkup = dates.map(({ name, flags, capital, population, languages }) => {
+return `
+<ul style="list-style:none">
+    <li class="country-info__capital-flag" style="display:flex; gap:30px; ">
+        <img class="country-list__flag" src="${flags.svg}" alt="Flag of ${name.official}" width=120px>
+        <h2 class="country-info__name">${name.official}</h2>
+    </li>
+    <li class="country-info__capital" style="margin-top:20px">capital: ${capital}</li>
+    <li class="country-info__population">population: ${population}</li>
+    <li class="country-info__lang">languages: ${Object.values(languages).join(', ')}</li>
+</ul>`
+}).join('')
+return countryInfoMarkup;
+}; --}}
